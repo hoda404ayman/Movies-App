@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="25sp"
+        android:background="@drawable/rounded_frame"
+        android:backgroundTint="#90151c"
+        android:paddingLeft="80dp"
+        android:text="MOVIES APP"
+        android:textColor="#F8DEE7"
+        android:textSize="30dp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/more_icon"
+        android:id="@+id/more"
+        />
+</LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text=""
+        android:id="@+id/msg"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myRecycler"
+        tools:listitem="@layout/movie_item"
+        android:scrollbars="vertical"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
